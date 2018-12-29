@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Survey form</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <body>
+  <header>
+    <hi id="title">Survey Form</h1>
+  </header>
+  <div id="form-outer">
+    <div id="description">
+      <p> Let us know we can improve freeCodeCamp</p>
+    </div>
+    <form id="survey-form">
+      <div class="row">
+        <label id="name-label" for="name">*Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      <div class="row">
+        <label id="email-label" for="email">*Email:</label>
+        <input type="text" id="email" name="name" placeholder="Enter your Email" required>
+      </div>
+      <div class="row">
+        <label id="age-label" for="age">*Age:</label>
+        <input type="number" name="age" id="number" min="1" max="100" placeholder="Age">
+      </div>
+      <div class="row">
+        <label for="currentstatus"> Which option best describes your current position?</label>
+        <select name="currentstatus" id="dropdown">
+         <option disabled selected value>Select an option</option>
+         <option value="student"> Student<option>
+         <option Value="job"> Full time job<option>
+         <option value="parttime"> Part time student<option>
+         <option value="other">Other</option>
+       </select>
+
+      </div>
+      <div class="row">
+        <label for="recommend">* How likely is that you would recommend freeCodeCamp to a friend?</label>
+        <ul class="def" id="recommend">
+          <li class="radio">
+            <label class="label">Definitely
+              <input  value="1" type="radio" name="radio-buttons" class="rating1">
+            </label>
+          </li>
+          <li class="radio">
+            <label class="label">Maybe
+              <input  value="2" name="radio-buttons" type="radio" class="rating1">
+              
+            </label>
+          </li>
+          <li class="radio">
+            <label class="label">Not sure<input  value="3" name="radio-buttons" type="radio" class="rating1">
+              
+            </label>
+          </li>
+        </ul>
+      </div>
+      <div class="row">
+        <lable for="liking"> What do you like most in FCC:</lable>
+        <select name="liking" class="dropdown">
+            <option disabled selected value>Select an option</option>
+            <option value="challenge">Challenge</option>
+            <option value="projects">Projects</option>
+            <option value="Community">Communtity</option>
+          </select>
+      </div>
+      <div class="row">
+        <label for="feedback">Things that should be improved in the future<br>
+         (Check all that apply):</label>
+        <ul class="def1" style="list-style:none;">
+          <li>
+            <label> <input type="checkbox" value="1" class="rating"> Front-end projects</lable>
+         </li>
+           <li>
+           <label> <input type="checkbox" value="2"> Back-end projects</lable>
+         </li>
+           <li>
+           <label> <input type="checkbox" value="3" class="rating" > Data Visualization</lable>
+         </li>
+           <li>
+             <label> 
+               <input type="checkbox" value="4"class="rating">Challenges</lable>
+          </li>
+           <li>
+         <label> 
+           <input type="checkbox" value="5" class="rating">Open source community
+           </lable>
+         </li>
+           <li>
+             <label>
+               <input type="checkbox" value="6" class="rating">City Meetups
+               </lable>
+          </li>
+           <li>
+             <label>
+               <input type="checkbox" value="7" class="rating">Wiki
+               </lable>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <div class="row">
+          <lable for="comments">Any Comments or Suggestions? <label></div>
+         <textarea name="comments" style="height:50px;resize:vertical" placeholder= "Enter your comment here ..."></textarea>
+          </div>
+          <button id="submit" type="submit">Submit</button>
+            </form>
+            </div>
+            </body>
+  
+  
+
+</body>
+
+</html>

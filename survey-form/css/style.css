@@ -1,0 +1,78 @@
+body{
+  background: #4d4dff;
+  font-family: Helvetica;
+  text-align: center;
+  
+}
+#title{ font-size: 35px;
+        font-weight: bold;
+        text-align: center;
+        }
+header{ margin: 20px;}
+#description {
+  font-size: 1.5em;
+}
+#form-outer{
+  background:  #8080ff;
+  border-radius: 4px;
+  width: 80%;
+  padding: 10px;
+  margin: 0 auto;
+}
+.row{
+  padding: 7px;
+  margin-top: 5px;
+  
+}
+.radio, .checkbox{
+  
+  margin-left: 0px,
+  display: block;
+  padding: 5px;
+}
+#recommend {
+  margin-left: 222px
+}
+.rating1 {
+  margin-right: 3px;
+  float: left;
+}
+.def {
+  list-style: none;
+  display: flex;
+ 
+}
+.rating {
+  
+  margin-right: 4px;
+}
+
+input[type="checkbox"]{
+  margin-right: 4px;
+}
+.label{
+  display: inline-block;
+  margin-left: 100px;
+  padding: 5 px;
+}
+textarea{
+  width: 400px;
+  height: 200px;
+}
+#submit{
+  background-color:#000080;
+  border-radius: 5px;
+  color: white;
+  font-size:1em;
+  height: 40px;
+  width: 95px;
+  margin: 10px;
+  border: 0px solid;
+}
+#prefer {
+  vertical-align: middle;
+}
+.def1 label{
+  display: flex;
+  margin-left: 400px;
+}
