@@ -4,40 +4,29 @@
 <head>
   <meta charset="UTF-8">
   <title>Survey form</title>
-  
-  
-  
       <link rel="stylesheet" href="css/style.css">
-
-  
 </head>
 
 <body>
-
-  <body>
-  <header>
-    <hi id="title">Survey Form</h1>
-  </header>
+    <h1 id="title">Referral Form</h1>
   <div id="form-outer">
-    <div id="description">
-      <p> Let us know we can improve freeCodeCamp</p>
-    </div>
+      <p id="description"> Let us know who you want to refer to our company</p>
     <form id="survey-form">
       <div class="row">
-        <label id="name-label" for="name">*Name:</label>
+        <label  for="name">*Name:</label>
         <input type="text" id="name" name="name" placeholder="Enter your name" required>
       </div>
       <div class="row">
-        <label id="email-label" for="email">*Email:</label>
-        <input type="text" id="email" name="name" placeholder="Enter your Email" required>
+        <label  for="email">*Email:</label>
+        <input type="email" id="email" name="name" placeholder="Enter your Email" required>
       </div>
       <div class="row">
-        <label id="age-label" for="age">*Age:</label>
+        <label  for="number">*Age:</label>
         <input type="number" name="age" id="number" min="1" max="100" placeholder="Age">
       </div>
       <div class="row">
-        <label for="currentstatus"> Which option best describes your current position?</label>
-        <select name="currentstatus" id="dropdown">
+        <label for="dropdown" id="tt"> Which option best describes his/her current position?</label>
+        <select id="dropdown" type="dropdown">
          <option disabled selected value>Select an option</option>
          <option value="student"> Student<option>
          <option Value="job"> Full time job<option>
@@ -47,29 +36,19 @@
 
       </div>
       <div class="row">
-        <label for="recommend">* How likely is that you would recommend freeCodeCamp to a friend?</label>
-        <ul class="def" id="recommend">
-          <li class="radio">
-            <label class="label">Definitely
-              <input  value="1" type="radio" name="radio-buttons" class="rating1">
-            </label>
-          </li>
-          <li class="radio">
-            <label class="label">Maybe
-              <input  value="2" name="radio-buttons" type="radio" class="rating1">
-              
-            </label>
-          </li>
-          <li class="radio">
-            <label class="label">Not sure<input  value="3" name="radio-buttons" type="radio" class="rating1">
-              
-            </label>
-          </li>
-        </ul>
+        <label for="recommend" id="rr">* How likely is that you would recommend our organization to a friend again?</label><br>
+          <div class="choose">
+             <label for="def">Definitely</label>
+             <input  value="1" type="radio" name="radio-buttons" id="def">
+             <label for="maybe">Maybe</label>
+             <input  value="2" name="radio-buttons" type="radio" id="maybe">
+             <label for="notsure">Not sure</label>
+             <input  value="3" name="radio-buttons" type="radio" id="notsure">
+            </div>
       </div>
       <div class="row">
-        <lable for="liking"> What do you like most in FCC:</lable>
-        <select name="liking" class="dropdown">
+        <lable for="liking" id="sr"> What do you like most working here:</lable>
+        <select id="liking" class="dropdown">
             <option disabled selected value>Select an option</option>
             <option value="challenge">Challenge</option>
             <option value="projects">Projects</option>
@@ -77,51 +56,26 @@
           </select>
       </div>
       <div class="row">
-        <label for="feedback">Things that should be improved in the future<br>
-         (Check all that apply):</label>
-        <ul class="def1" style="list-style:none;">
-          <li>
-            <label> <input type="checkbox" value="1" class="rating"> Front-end projects</lable>
-         </li>
-           <li>
-           <label> <input type="checkbox" value="2"> Back-end projects</lable>
-         </li>
-           <li>
-           <label> <input type="checkbox" value="3" class="rating" > Data Visualization</lable>
-         </li>
-           <li>
-             <label> 
-               <input type="checkbox" value="4"class="rating">Challenges</lable>
-          </li>
-           <li>
-         <label> 
-           <input type="checkbox" value="5" class="rating">Open source community
-           </lable>
-         </li>
-           <li>
-             <label>
-               <input type="checkbox" value="6" class="rating">City Meetups
-               </lable>
-          </li>
-           <li>
-             <label>
-               <input type="checkbox" value="7" class="rating">Wiki
-               </lable>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <div class="row">
-          <lable for="comments">Any Comments or Suggestions? <label></div>
-         <textarea name="comments" style="height:50px;resize:vertical" placeholder= "Enter your comment here ..."></textarea>
-          </div>
+        <label for="feedback" id="tr">Things that should be improved in the future
+         (Check all that apply):</label><br><br>
+             <input type="checkbox" value="1" id="front">
+             <label for="front">Front-end projects</lable>
+             <input type="checkbox" value="2" id="back"> 
+             <label for="back">Back-end projects</lable>
+             <input type="checkbox" value="3" id="data" >
+             <label for="data">Data Visualization projects</lable><br>
+             <input type="checkbox" value="5" id="open">
+             <label for="open"> Open source projects</lable>
+             <input type="checkbox" value="7" id="wiki">
+             <labe for="wiki">Other</lable>
+        
+      </div><br>
+      <lable for="comments">Any Comments or Suggestions?<label><br>
+      <textarea id="comments" style="height:100px;width:60%;resize:vertical" placeholder= "Enter your comment here ..."></textarea><br>
+       
           <button id="submit" type="submit">Submit</button>
             </form>
             </div>
             </body>
-  
-  
-
-</body>
 
 </html>
